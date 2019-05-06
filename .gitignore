@@ -1,0 +1,12 @@
+.gradle
+build
+.idea
+*.iml
+*.ipr
+*.iws
+.DS_Store
+.env
+ci/variables.yml
+integration-test/out/
+components/rest-support/out/
+components/test-support/out/
