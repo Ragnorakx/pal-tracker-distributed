@@ -1,0 +1,13 @@
+applications:
+- name: oauth-server
+  path: ./build/libs/oauth-server.jar
+  routes:
+  - route: https://oauth-pal-egerr.cfapps.io
+  memory: 1G
+  instances: 1
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    GRANT_TYPE: client_credentials
+    APPLICATION_OAUTH_ENABLED: true
+    SECURITY_OAUTH2_CLIENT_CLIENT_ID: tracker-client
+    SECURITY_OAUTH2_CLIENT_CLIENT_SECRET: supersecret
