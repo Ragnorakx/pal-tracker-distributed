@@ -12,3 +12,10 @@ applications:
   - tracker-registration-database
   - tracker-service-registry
   - tracker-sso
+  security:
+  oauth2:
+    client:
+      client-id: tracker-client
+      client-secret: supersecret
+      token-info-uri: https://oauth-pal-egerr.cfapps.io/oauth/check_token
+      access-token-uri: https://oauth-pal-egerr.cfapps.io/oauth/access_token
